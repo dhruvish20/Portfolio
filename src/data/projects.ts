@@ -122,6 +122,6 @@ export const projects: Project[] = [
   ],
   conceptNote:
     "The core idea was to merge **geolocation data** with **real-time competition mechanics**. Each user’s submission includes GPS metadata that’s validated and stored alongside their photo. Competitions run as **rooms** — isolated channels where participants receive updates instantly when someone uploads a new image or scores a point.  \n\nA **Redis pub/sub layer** ensures that leaderboard changes propagate to all connected clients within milliseconds, while the frontend uses WebSocket subscriptions to update the UI live without reloads.  \n\nArchitecturally, this project taught how to synchronize distributed state — multiple clients viewing and interacting with the same event feed — and how to balance load by emitting only relevant updates per room rather than global broadcasts.  \n\nThe result is a smooth, multiplayer-like web experience that blends event-driven programming, geospatial data, and real-time engagement.",
-  links: [{ label: "Repo", href: "#", type: "repo" }],
+  links: [{ label: "Repo", href: "https://github.com/dhruvish20/photography-spot-finder", type: "repo" }],
 },
 ];
