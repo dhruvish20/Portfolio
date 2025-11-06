@@ -1,0 +1,119 @@
+/* src/styles/projectDrawer.css */
+
+.project-drawer-backdrop {
+  @apply fixed inset-0 bg-black/30 backdrop-blur-sm z-40 flex justify-end;
+}
+
+.project-drawer-panel {
+  @apply h-full w-full max-w-2xl bg-white shadow-2xl border-l border-neutral-200 flex flex-col;
+  /* soften edge on larger screens */
+  border-top-left-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
+
+  /* make sure content can't visually spill outside rounded edges */
+  overflow: hidden;
+}
+
+/* keep header visible while scrolling */
+.project-drawer-header {
+  @apply flex items-center justify-between px-6 py-4 border-b border-neutral-200 bg-white;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.project-drawer-title {
+  @apply text-lg font-semibold tracking-tight;
+}
+
+.project-drawer-subtitle {
+  @apply text-xs text-neutral-500 mb-0.5;
+}
+
+.project-drawer-body {
+  @apply flex-1 overflow-y-auto;
+  /* prevent horizontal scroll inside drawer */
+  overflow-x: hidden;
+}
+
+/* center content and limit line length for readability */
+.project-drawer-body-inner {
+  @apply px-6 py-5 space-y-6;
+  max-width: 640px;
+  width: 100%;
+  margin: 0 auto;
+  /* keep long words / code from pushing outside */
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* labels between sections */
+.project-drawer-section-label {
+  @apply text-[11px] font-mono uppercase tracking-[0.2em] text-neutral-500 mb-1.5;
+}
+
+.project-drawer-description {
+  @apply text-sm text-neutral-700 leading-relaxed;
+}
+
+/* "What I built" list */
+.project-drawer-features {
+  margin-top: 0.2rem;
+  margin-bottom: 1.1rem;
+  padding-left: 1.1rem;
+  list-style-type: disc;
+  color: #111827;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.project-drawer-features li + li {
+  margin-top: 0.25rem;
+}
+
+/* concept block */
+.project-drawer-concept {
+  @apply text-sm leading-relaxed text-neutral-800;
+  margin-top: 0.4rem;
+  padding: 0.75rem 0.85rem;
+  border-radius: 0.75rem;
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+}
+
+/* metrics */
+.project-drawer-metrics {
+  @apply grid grid-cols-2 gap-3 mt-2;
+}
+
+.project-metric-card {
+  @apply rounded-2xl border border-neutral-200 px-4 py-3 
+    flex flex-col items-center justify-center text-center gap-1;
+}
+
+.project-metric-label {
+  @apply text-xs text-neutral-500;
+}
+
+.project-metric-value {
+  @apply text-base font-semibold text-neutral-900;
+}
+
+/* tags + links */
+.project-drawer-tags {
+  @apply flex flex-wrap gap-1.5;
+}
+
+.project-drawer-links {
+  @apply flex flex-wrap gap-2;
+}
+
+.project-link-btn {
+  @apply rounded-2xl px-3.5 py-2 border border-neutral-200 text-sm inline-flex items-center gap-2 
+    bg-white
+    hover:bg-neutral-100 hover:border-neutral-300 hover:-translate-y-[1px]
+    hover:shadow-[0_6px_18px_rgba(15,23,42,0.14)]
+    transition-all duration-150;
+}
+
+

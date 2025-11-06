@@ -1,0 +1,22 @@
+/* src/styles/footer.css */
+
+.site-footer {
+  @apply w-full bg-white border-t border-neutral-100;
+}
+
+.site-footer-inner {
+  @apply mx-auto max-w-5xl px-4 py-4 md:py-5 flex flex-col md:flex-row 
+    items-center justify-between gap-2 text-xs text-neutral-500;
+}
+
+.site-footer-left {
+  @apply flex items-center gap-1;
+}
+
+.site-footer-right {
+  @apply flex items-center gap-2;
+}
+
+.site-footer-dot {
+  @apply hidden md:inline;
+}

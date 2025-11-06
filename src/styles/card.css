@@ -1,0 +1,16 @@
+.card {
+  @apply rounded-2xl border border-neutral-200/80 bg-white transition-all duration-150;
+}
+
+/* subtle for non-clickable cards (e.g. academics) */
+.card-hover {
+  @apply hover:shadow-[0_10px_30px_rgba(15,23,42,0.05)];
+}
+
+/* clearer lift for interactive cards */
+.card-interactive {
+  @apply cursor-pointer 
+    hover:-translate-y-[3px] hover:scale-[1.01]
+    hover:shadow-[0_20px_50px_rgba(15,23,42,0.10)]
+    hover:border-neutral-300;
+}

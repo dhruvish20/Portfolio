@@ -1,0 +1,46 @@
+/* src/styles/academics.css */
+
+.academics-section {
+  @apply w-full bg-white;
+}
+
+.academics-inner {
+  @apply mx-auto max-w-5xl px-4 pt-6 pb-8 md:pt-8 md:pb-10;
+}
+
+
+.academics-list {
+  @apply mt-5 flex flex-col gap-4;
+}
+
+.academic-card {
+  @apply p-5 flex flex-col gap-2;
+}
+
+.academic-header {
+  @apply flex flex-wrap items-baseline justify-between gap-2;
+}
+
+.academic-degree {
+  @apply text-base font-semibold tracking-tight;
+}
+
+.academic-institution {
+  @apply text-sm text-neutral-700;
+}
+
+.academic-meta {
+  @apply text-xs text-neutral-500;
+}
+
+.academic-details {
+  @apply mt-2 text-sm text-neutral-700;
+}
+
+.academic-courses-label {
+  @apply mt-3 text-xs font-mono uppercase tracking-[0.2em] text-neutral-500;
+}
+
+.academic-courses {
+  @apply mt-1 text-xs text-neutral-700;
+}

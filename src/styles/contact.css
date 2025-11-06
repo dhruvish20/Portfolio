@@ -1,0 +1,27 @@
+/* src/styles/contact.css */
+
+.contact-section {
+  @apply w-full bg-white;
+}
+
+.contact-inner {
+  @apply mx-auto max-w-5xl px-4 pt-6 pb-10 md:pt-8 md:pb-12;
+}
+
+
+.contact-blurb {
+  @apply text-sm md:text-base text-neutral-700 max-w-2xl;
+}
+
+.contact-actions {
+  @apply mt-5 flex flex-wrap items-center gap-3;
+}
+
+.contact-btn {
+  @apply rounded-2xl inline-flex items-center gap-2 px-3.5 py-2 border border-neutral-200 
+    text-sm text-neutral-800 bg-white 
+    hover:bg-neutral-100 hover:border-neutral-300 hover:-translate-y-[1px]
+    hover:shadow-[0_6px_18px_rgba(15,23,42,0.14)]
+    transition-all duration-150;
+}
+

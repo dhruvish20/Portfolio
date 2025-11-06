@@ -1,0 +1,79 @@
+/* src/styles/featuredSystems.css */
+
+.featured-section {
+  @apply w-full bg-white;
+}
+
+.featured-inner {
+  @apply mx-auto max-w-5xl px-4 pt-6 pb-8 md:pt-8 md:pb-10;
+}
+
+.featured-grid {
+  @apply mt-5 grid grid-cols-1 md:grid-cols-3 gap-5 items-stretch;
+}
+
+.featured-card {
+  @apply relative p-6 h-full flex flex-col gap-3;
+}
+
+.featured-header {
+  @apply flex items-center gap-2;
+}
+
+.featured-badge {
+  @apply text-[10px] font-mono uppercase tracking-[0.18em] text-neutral-500;
+}
+
+.featured-title {
+  @apply text-lg font-medium tracking-tight;
+}
+
+.featured-subtitle {
+  @apply mt-1 text-sm text-neutral-600;
+}
+
+.featured-list {
+  @apply mt-3 text-sm text-neutral-700 space-y-1.5;
+}
+
+.featured-tags {
+  @apply mt-3 flex flex-wrap gap-1.5;
+}
+
+.featured-metrics {
+  @apply mt-3 grid grid-cols-2 gap-2;
+}
+
+.featured-metric-card {
+  @apply rounded-2xl border border-neutral-200 px-3 py-2 flex flex-col 
+    items-center justify-center text-center gap-1 bg-white;
+}
+
+.featured-metric-label {
+  @apply text-[11px] text-neutral-500;
+}
+
+.featured-metric-value {
+  @apply text-sm font-semibold text-neutral-900;
+}
+
+.featured-notebook {
+  @apply mt-3 text-xs text-neutral-500;
+}
+
+.featured-actions {
+  @apply mt-4 flex flex-wrap gap-2 text-sm;
+}
+
+.featured-pill-btn {
+  @apply rounded-2xl px-3.5 py-2 border border-neutral-200 inline-flex items-center gap-2 
+    text-sm bg-white
+    transition-all duration-150
+    hover:bg-neutral-100 hover:border-neutral-300 hover:-translate-y-[1px]
+    hover:shadow-[0_6px_18px_rgba(15,23,42,0.14)];
+}
+
+.featured-notebook-link {
+  @apply mt-3 text-xs text-neutral-500 inline-flex items-center gap-1
+    hover:text-neutral-900 hover:underline cursor-pointer;
+}

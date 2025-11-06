@@ -1,0 +1,28 @@
+/* src/styles/header.css */
+
+/* Sticky bar at the top */
+.site-header {
+  @apply sticky top-0 z-20 bg-white/80 backdrop-blur border-b border-neutral-200/70;
+}
+
+/* Inner layout – full width with side padding */
+.site-header-inner {
+  @apply w-full px-4 sm:px-8 lg:px-16 py-3 flex items-center justify-between;
+}
+
+/* Name on the left */
+.site-header-brand {
+  @apply font-medium tracking-tight font-mono;
+}
+
+/* Nav links on the right */
+.site-header-nav {
+  @apply hidden sm:flex gap-5 text-sm text-neutral-600;
+}
+
+.site-header-link {
+  @apply relative transition-all hover:text-neutral-900
+    after:absolute after:left-0 after:-bottom-0.5 after:h-px after:w-0
+    after:bg-neutral-900/70 after:transition-all
+    hover:after:w-full;
+}

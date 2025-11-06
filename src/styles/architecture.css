@@ -1,0 +1,55 @@
+/* src/styles/architecture.css */
+
+.arch-section {
+  @apply w-full bg-white;
+}
+
+.arch-inner {
+  @apply mx-auto max-w-5xl px-4 pt-6 pb-8 md:pt-8 md:pb-10;
+}
+
+.arch-grid {
+  @apply mt-5 grid grid-cols-1 md:grid-cols-3 gap-5;
+}
+
+.arch-card {
+  @apply p-5 flex flex-col gap-2;
+}
+
+.arch-label {
+  @apply text-sm font-medium tracking-tight;
+}
+
+.arch-description {
+  @apply text-sm text-neutral-600;
+}
+
+.arch-placeholder {
+  @apply mt-3 h-24 rounded-xl border border-dashed border-neutral-200 bg-neutral-50 flex items-center justify-center text-xs text-neutral-500;
+}
+
+.arch-card {
+  @apply relative p-5 flex flex-col gap-2;
+}
+
+.arch-overlay-icon {
+  @apply absolute top-3 right-3 text-neutral-300 group-hover:text-neutral-500 transition-colors;
+}
+
+/* Architecture card layout */
+.arch-preview-container {
+  @apply mt-3 relative w-full aspect-[4/2] rounded-xl border border-neutral-200 bg-neutral-50 
+    overflow-hidden transition-all duration-300;
+}
+
+.arch-preview {
+  @apply w-full h-full object-contain transition-transform duration-300;
+}
+
+.group:hover .arch-preview {
+  transform: scale(1.05);
+}
+
+.arch-overlay-icon {
+  @apply absolute top-3 right-3 text-neutral-300 group-hover:text-neutral-500 transition-colors;
+}
